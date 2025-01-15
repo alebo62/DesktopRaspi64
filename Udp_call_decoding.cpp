@@ -1,5 +1,5 @@
 #include  "Udp.h"
-
+#include  <QDebug>
 void Udp::call_decoding(void)
 {
 	if (ba_udp_rcp.at(20) == 1)// voice RX
@@ -16,14 +16,20 @@ void Udp::call_decoding(void)
 		if (ba_udp_rcp.at(22) == 1) {
 			// group Call
 			//sCallReport.callType = 1;
+			qDebug() << "gr call init" << rcv_rcp << ((ba_udp_rcp.at(26) << 2) + (ba_udp_rcp.at(25) << 1) + ba_udp_rcp.at(24)) << 
+				                       ((ba_udp_rcp.at(30) << 2) + (ba_udp_rcp.at(29) << 1) + ba_udp_rcp.at(28));
 		}
 		else if (ba_udp_rcp.at(22) == 0) {
 			//PrivateCall
 			//sCallReport.callType = 3;
+			
+			
 		}
 		else if (ba_udp_rcp.at(22) == 2) {
 			// AllCall
 			//sCallReport.callType = 5;
+			
+			
 		}
 		else if (ba_udp_rcp.at(22) == 3) {
 			// Emerg Group Call
@@ -62,7 +68,7 @@ void Udp::call_decoding(void)
 			send_command[4] = send_req_id >> 8;
 			send_command[5] = send_req_id & 0xFF;
 			memcpy(send_command + 6, messagesHm785->ptt_press_req, messagesHm785->ptt_press_req[3] + 7);
-			udp_sock_rcp->writeDatagram((char*)send_command, messagesHm785->ptt_press_req[3] + 7 + 6, QHostAddress(reader->udp_ip[rcv_rcp]), reader->udp_port_rcp);
+			//udp_sock_rcp->writeDatagram((char*)send_command, messagesHm785->ptt_press_req[3] + 7 + 6, QHostAddress(reader->udp_ip[rcv_rcp]), reader->udp_port_rcp);
 			// and wait 0x4180 ...
 			send_req_id++;
 		}
@@ -87,6 +93,7 @@ void Udp::call_decoding(void)
 		if (ba_udp_rcp.at(22) == 1) {
 			// group Call
 			//sCallReport.callType = 1;
+			qDebug() << "group call hang" ;
 		}
 		else if (ba_udp_rcp.at(22) == 0) {
 			//PrivateCall
@@ -122,7 +129,7 @@ void Udp::call_decoding(void)
 			send_command[4] = send_req_id >> 8;
 			send_command[5] = send_req_id & 0xFF;
 			memcpy(send_command + 6, messagesHm785->dig_audio_rx, messagesHm785->dig_audio_rx[3] + 7);
-			udp_sock_rcp->writeDatagram((char*)send_command, messagesHm785->dig_audio_rx[3] + 7 + 6, QHostAddress(reader->udp_ip[rcv_rcp]), reader->udp_port_rcp);
+			//udp_sock_rcp->writeDatagram((char*)send_command, messagesHm785->dig_audio_rx[3] + 7 + 6, QHostAddress(reader->udp_ip[rcv_rcp]), reader->udp_port_rcp);
 			//udp_sock_rcp->flush();
 			send_req_id++;
 		}
@@ -143,19 +150,19 @@ void Udp::call_decoding(void)
 		send_command[4] = send_req_id >> 8;
 		send_command[5] = send_req_id & 0xFF;
 		memcpy(send_command + 6, messagesHm785->ptt_release_req, messagesHm785->ptt_release_req[3] + 7);
-		udp_sock_rcp->writeDatagram((char*)send_command, messagesHm785->ptt_release_req[3] + 7 + 6, QHostAddress(reader->udp_ip[rcv_rcp]), reader->udp_port_rcp);
+		//udp_sock_rcp->writeDatagram((char*)send_command, messagesHm785->ptt_release_req[3] + 7 + 6, QHostAddress(reader->udp_ip[rcv_rcp]), reader->udp_port_rcp);
 		// and wait 0x4180 ...
 		send_req_id++;
 	}
 	else if (ba_udp_rcp.at(20) == 3) // CallEnd
 	{
-		
+		qDebug() << "call end";
 
 		checksum(messagesHm785->dig_audio_tx);
 		send_command[4] = send_req_id >> 8;
 		send_command[5] = send_req_id & 0xFF;
 		memcpy(send_command + 6, messagesHm785->dig_audio_tx, messagesHm785->dig_audio_tx[3] + 7);
-		udp_sock_rcp->writeDatagram((char*)send_command, messagesHm785->dig_audio_tx[3] + 7 + 6, QHostAddress(reader->udp_ip[rcv_rcp]), reader->udp_port_rcp);
+		//udp_sock_rcp->writeDatagram((char*)send_command, messagesHm785->dig_audio_tx[3] + 7 + 6, QHostAddress(reader->udp_ip[rcv_rcp]), reader->udp_port_rcp);
 		//udp_sock_rcp->flush();
 		send_req_id++;
 

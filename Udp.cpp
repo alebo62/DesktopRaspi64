@@ -86,7 +86,8 @@ void Udp::readPendDgrmRcp()
 		if (connection == 2)
 		{
 			udp_sock_rcp->writeDatagram((char*) messagesHm785->ack_heatbeat, 6, QHostAddress(reader->udp_ip[rcv_rcp]), reader->udp_port_rcp);
-			//radioConn_tim.start();
+			//radioConn_tim->start();
+			//qDebug() << "heartbeat";
 		}
 		else if (connection == 1)
 		{
@@ -116,7 +117,6 @@ void Udp::readPendDgrmRcp()
 				memcpy((char*)messagesHm785->ack, ba_udp_rcp.data(), 15);
 				messagesHm785->ack[3] = 0x21;
 				udp_sock_rcp->writeDatagram((char*)messagesHm785->ack, 15, QHostAddress(reader->udp_ip[rcv_rcp]), reader->udp_port_rcp);
-				udp_sock_rcp->flush();
 				// receive
 				if (ba_udp_rcp.at(16) == 0x44 && ba_udp_rcp.at(17) == (char)0xB8) {
 					//                    checksum(dig_audio_rx);
@@ -217,6 +217,7 @@ void Udp::readPendDgrmRcp()
 		qDebug() << "rcp conn req";
 		memcpy((char*)messagesHm785->ack_connect + 4, ba_udp_rcp.data() + 4, 11);
 		udp_sock_rcp->writeDatagram((char*) messagesHm785->ack_connect, 15, QHostAddress(reader->udp_ip[rcv_rcp]), reader->udp_port_rcp);
+		connection = 1;
 	}
 	else if(ba_udp_rcp.at(3) ==  0x28) // disconnect request
 	{

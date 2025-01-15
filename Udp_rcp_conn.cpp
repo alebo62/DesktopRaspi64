@@ -9,7 +9,9 @@ void Udp::rad_conn_tim_slot()
 {
 	udp_sock_rcp->writeDatagram((char*)messagesHm785->conn, 12, QHostAddress(reader->udp_ip[rcv_rcp]), reader->udp_port_rcp);
 	//udpAN_RCP.writeDatagram((char*)conn, 12, QHostAddress(host), AN_RCP);
-	
+	qDebug() << "connect timer";
+	connection = 0;
+	radioConn_tim->stop();	
 }
 
 void Udp::radio_init(void)
