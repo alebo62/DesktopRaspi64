@@ -1,0 +1,591 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "DesktopRaspi64"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"set_property",
+			"find_dependency",
+			"_qt_internal_find_third_party_dependencies",
+			"_qt_internal_find_qt_dependencies"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/lib/aarch64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
+			"D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/lib/aarch64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/lib/aarch64-linux-gnu/cmake/Qt6/Qt6Config.cmake",
+			"C:/Users/User/AppData/Local/VisualGDB/CMake/share/cmake-3.28/Modules/FindOpenGL.cmake",
+			"D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/lib/aarch64-linux-gnu/cmake/Qt6/FindWrapOpenGL.cmake",
+			"C:/Users/User/AppData/Local/VisualGDB/CMake/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake",
+			"D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/lib/aarch64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/lib/aarch64-linux-gnu/cmake/Qt6Gui/Qt6GuiDependencies.cmake",
+			"D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/lib/aarch64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/lib/aarch64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 167,
+				"parent" : 6
+			},
+			{
+				"file" : 2,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 62,
+				"parent" : 8
+			},
+			{
+				"file" : 1,
+				"parent" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 71,
+				"parent" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 50,
+				"parent" : 8
+			},
+			{
+				"file" : 10,
+				"parent" : 12
+			},
+			{
+				"command" : 8,
+				"file" : 10,
+				"line" : 39,
+				"parent" : 13
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 108,
+				"parent" : 14
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 76,
+				"parent" : 15
+			},
+			{
+				"file" : 9,
+				"parent" : 16
+			},
+			{
+				"command" : 3,
+				"file" : 9,
+				"line" : 50,
+				"parent" : 17
+			},
+			{
+				"file" : 8,
+				"parent" : 18
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 30,
+				"parent" : 19
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 33,
+				"parent" : 20
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 76,
+				"parent" : 21
+			},
+			{
+				"file" : 5,
+				"parent" : 22
+			},
+			{
+				"command" : 4,
+				"file" : 5,
+				"line" : 10,
+				"parent" : 23
+			},
+			{
+				"file" : 4,
+				"parent" : 24
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 673,
+				"parent" : 25
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 671,
+				"parent" : 25
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_SQL_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_WIDGETS_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "D:/Users/User/source/repos/DesktopRaspi64/build/VisualGDB/Debug"
+				},
+				{
+					"path" : "D:/Users/User/source/repos/DesktopRaspi64"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "D:/Users/User/source/repos/DesktopRaspi64/build/VisualGDB/Debug/DesktopRaspi64_autogen/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/include/aarch64-linux-gnu/qt6/QtWidgets"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/include/aarch64-linux-gnu/qt6"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/include/aarch64-linux-gnu/qt6/QtCore"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/lib/aarch64-linux-gnu/qt6/mkspecs/linux-g++"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/include/aarch64-linux-gnu/qt6/QtGui"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/include/aarch64-linux-gnu/qt6/QtNetwork"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot/usr/include/aarch64-linux-gnu/qt6/QtSql"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				4,
+				6,
+				8,
+				10,
+				13,
+				14,
+				15,
+				17,
+				18,
+				19
+			],
+			"sysroot" : 
+			{
+				"path" : "D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "DesktopRaspi64_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "DesktopRaspi64_autogen::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "DesktopRaspi64::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-rdynamic",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\SysGCC\\raspberry64\\aarch64-linux-gnu\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libQt6Widgets.so.6.4.2",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\SysGCC\\raspberry64\\aarch64-linux-gnu\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libQt6Network.so.6.4.2",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "D:\\SysGCC\\raspberry64\\aarch64-linux-gnu\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libQt6Sql.so.6.4.2",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lhidapi-libusb",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lasound",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "D:\\SysGCC\\raspberry64\\aarch64-linux-gnu\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libQt6Gui.so.6.4.2",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "D:\\SysGCC\\raspberry64\\aarch64-linux-gnu\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libGLX.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 27,
+				"fragment" : "D:\\SysGCC\\raspberry64\\aarch64-linux-gnu\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libOpenGL.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "D:\\SysGCC\\raspberry64\\aarch64-linux-gnu\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libQt6Core.so.6.4.2",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX",
+		"sysroot" : 
+		{
+			"path" : "D:/SysGCC/raspberry64/aarch64-linux-gnu/sysroot"
+		},
+		"traceableCommandFragments" : 
+		[
+			{
+				"backtrace" : 2,
+				"fragment" : "Qt6::Widgets"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "Qt6::Network"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "Qt6::Sql"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lhidapi-libusb"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lasound"
+			}
+		]
+	},
+	"name" : "DesktopRaspi64",
+	"nameOnDisk" : "DesktopRaspi64",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				4,
+				6,
+				8,
+				10,
+				13,
+				14,
+				15,
+				17,
+				18,
+				19
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				3,
+				12,
+				22
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				5,
+				7,
+				9,
+				11,
+				16,
+				20,
+				21
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				23
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/DesktopRaspi64_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "DesktopRaspi64.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "MainWindow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "MainWindow.ui",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Sound.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Sound.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Udp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Udp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "DataBase.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "DataBase.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "SettingsReader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "SettingsReader.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Password.ui",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Udp_checksum.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Udp_rcp_conn.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "messages_hm785.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "messages_hm785.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Udp_pressPtt.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Udp_call_decoding.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Udp_send_call_report.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/DesktopRaspi64_autogen/include/ui_MainWindow.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/DesktopRaspi64_autogen/include/ui_Password.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/DesktopRaspi64_autogen/timestamp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/VisualGDB/Debug/DesktopRaspi64_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "EXECUTABLE"
+}

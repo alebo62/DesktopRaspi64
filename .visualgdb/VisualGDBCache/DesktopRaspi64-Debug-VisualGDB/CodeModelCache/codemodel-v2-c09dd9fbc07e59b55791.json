@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-DEBUG-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "DEBUG",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "DesktopRaspi64",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "DesktopRaspi64::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DesktopRaspi64-DEBUG-8c8039dc1772c3934c3f.json",
+					"name" : "DesktopRaspi64",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DesktopRaspi64_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DesktopRaspi64_autogen-DEBUG-a379259cf0b2d4643694.json",
+					"name" : "DesktopRaspi64_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DesktopRaspi64_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DesktopRaspi64_autogen_timestamp_deps-DEBUG-87971c9f5ac9229c5705.json",
+					"name" : "DesktopRaspi64_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Users/User/source/repos/DesktopRaspi64/build/VisualGDB/Debug",
+		"source" : "D:/Users/User/source/repos/DesktopRaspi64"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
